@@ -7,3 +7,9 @@ TEST BENCHMARK AI
 
 
 ## PAS MAL 🦄
+- https://github.com/graykode/gpt-2-Pytorch 
+
+## TRES COOL 🧞
+- https://smodin.io/writer
+- 
+
