@@ -1,5 +1,4 @@
-# textaitest
-TEST BENCHMARK AI
+# BENCHMARK AI
 
 ## MAUVAIS :badger:
 
@@ -10,6 +9,10 @@ TEST BENCHMARK AI
 - https://github.com/graykode/gpt-2-Pytorch 
 
 ## TRES COOL 🧞
-- https://smodin.io/writer
-- 
+- https://smodin.io/writer //  pour les articles de moins de 500 mots
+-  
 
+# Type de contenu pour lesquels ça ne marche pas
+
+- comparatif de plusieurs produits
+- description de produit : à tester
