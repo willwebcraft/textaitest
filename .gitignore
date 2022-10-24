@@ -1,0 +1,9 @@
+#vs code stuff
+.vscode/*
+
+# env
+.env
+
+# log files
+geckodriver.log
+40.8.0

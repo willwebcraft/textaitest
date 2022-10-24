@@ -1,0 +1,12 @@
+{
+    "commands" :
+        {
+            "category": [
+                { 
+                "subject" : "string",
+                "link" : "string",
+                "reward": "number"
+                }
+            ]
+        }
+}
