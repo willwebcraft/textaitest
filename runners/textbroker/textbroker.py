@@ -1,10 +1,8 @@
-import http
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from dotenv import load_dotenv
 import os
-from bs4 import BeautifulSoup
 import requests
 
 
@@ -57,7 +55,7 @@ commands = {
 options = webdriver.ChromeOptions()
 options.set_capability("loggingPrefs", {'performance': 'ALL'})
 browser = webdriver.Chrome(options=options)
-url = os.getenv('TARGET_URL')
+url = os.getenv('TEXTBROKER_URL')
 
 ##########
 # ACCESSING THE PAGE

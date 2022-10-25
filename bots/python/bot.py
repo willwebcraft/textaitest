@@ -11,7 +11,7 @@ import asyncio
 #########
 load_dotenv()
 TOKEN = os.getenv('BOT_TOKEN')
-SCRIPT = '../../runners/textbroker.py'
+SCRIPT = '../../runners/textbroker/textbroker.py'
 
 ############
 # FUNCTIONS
