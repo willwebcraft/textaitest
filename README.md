@@ -16,3 +16,17 @@
 
 - comparatif de plusieurs produits
 - description de produit : à tester
+
+# BOTS
+
+* Bot in Ruby is 'legacy'
+* Bot in Python is the more recent one 
+
+# PLATEFORME
+
+## Textbroker
+Déjà en cours de développement.
+## Textes.fr
+
+- Lien : https://www.textes.fr/
+- En attente de validation de candidature

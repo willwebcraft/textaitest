@@ -33,7 +33,8 @@ porphyre = os.getenv('PORPHYRE')
 xpaths = {
     'loginBtn': '//*[@id="navigation"]/div/div/div[2]/a[1]',
     'commandTable': '//tr[3]/td/div[5]/table',
-    'categoryLink' : '//tr[3]/td/div[5]/table/tbody/tr[2]/td[1]/a' # add /[i] to browse
+    'categoryLink' : '//tr[3]/td/div[5]/table/tbody/tr[2]/td[1]/a', # add /[i] to browse
+    'commandTitle' : '//tr/td[@class="td-a-2 ddrivetip"]/a'
 }
 
 class_names = {
@@ -96,6 +97,22 @@ command_button.click()
 # FETCH DATA
 raw_command_data = browser.find_elements(By.XPATH, xpaths['categoryLink'])
 print(raw_command_data)
+for element in raw_command_data:
+    print('ELEMENT IS')
+    print(element)
+    item = element.find_element(By.XPATH, '//b')
+    print(item.text)
+    commands[item.text] = []
+
+    element.click()
+
+    commandTitles = browser.find_elements(By.XPATH, xpaths['commandTitle'])
+    for item in commandTitles:
+        commands[item.text].append(item.text)
+
+
+
+
 time.sleep(5)
 
 # PARSE DATA
@@ -105,7 +122,7 @@ time.sleep(5)
 # STORE DATA STATE 
 
 # IF NEW DATA THEN SEND NOTIF WITH TELEGRAM
-send_telegram_msg(f'🚀 *NEW DATA HAS ARRIVED* : \nDATA : {raw_command_data}', feutral)
+send_telegram_msg(f'🚀 *NEW DATA HAS ARRIVED* : \nDATA : {commands}', feutral)
 
 time.sleep(5)
 browser.quit()
